@@ -1,12 +1,15 @@
 <template>
-    <figure>
-        <img src="../assets/img/dc-logo.png" alt="logo dc comics">
-    </figure>
-    <ul>
-        <li v-for="link in links" :key="link.id">
-            <a :href="link.url" :class="{ active: link.current }">{{ link.text }}"</a>
-        </li>
-    </ul>
+    <div class="container">
+
+        <figure>
+            <img src="../assets/img/dc-logo.png" alt="logo dc comics">
+        </figure>
+        <ul>
+            <li v-for="link in links" :key="link.id">
+                <a :href="link.url" :class="{ active: link.current }">{{ link.text }}"</a>
+            </li>
+        </ul>
+    </div>
 </template>
 
 <script>

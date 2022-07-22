@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <div class="container">
-      <Header></Header>
-    </div>
+    <Header></Header>
   </div>
 </template>
 
@@ -26,12 +24,6 @@ export default {
 
 #app {
   font-family: "Segoe UI", "Open Sans", Helvetica, sans-serif;
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-
-  }
 
 }
 </style>
