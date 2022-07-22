@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
 
         <figure>
             <img src="../assets/img/dc-logo.png" alt="logo dc comics">
@@ -86,5 +86,32 @@ export default {
 }
 </script>
 
-<style>
+<style scope>
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+}
+
+img {
+    height: 80px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 0 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 15px;
+}
 </style>
