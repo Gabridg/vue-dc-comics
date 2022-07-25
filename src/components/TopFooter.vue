@@ -63,12 +63,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .background-footer {
     background-image: url('../assets/img/footer-bg.jpg');
     background-position: center;
     background-size: contain;
     height: 300px;
+    padding: 10px 0;
 }
 
 .container {

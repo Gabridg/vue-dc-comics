@@ -3,6 +3,7 @@
     <div class="container">
       <Header></Header>
     </div>
+    <Jumbo></Jumbo>
     <Main></Main>
     <Section></Section>
     <Footer></Footer>
@@ -11,19 +12,22 @@
 
 <script>
 import Header from "./components/HeaderComponent.vue";
-import Main from "./components/ContentMain.vue";
+import Jumbo from "./components/JumboMain.vue";
 import TopFooter from "./components/TopFooter.vue";
 import BottomFooter from "./components/BottomFooter.vue";
+import Main from "./components/MainContent.vue"
 
 export default {
   name: 'App',
   components: {
     Header,
-    Main,
+    Jumbo,
     Section: TopFooter,
     Footer: BottomFooter,
-  }
+    Main,
+  },
 }
+
 </script>
 
 <style lang="scss">

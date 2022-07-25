@@ -24,7 +24,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .final-footer {
     background-color: #303030;
     height: 100px;
@@ -61,5 +61,6 @@ export default {
     border: 2px solid #0282f9;
     color: #fff;
     padding: 10px 15px;
+    cursor: pointer;
 }
 </style>
