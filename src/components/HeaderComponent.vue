@@ -1,12 +1,12 @@
 <template>
-    <div>
+    <div class="header-nav">
 
         <figure>
             <img src="../assets/img/dc-logo.png" alt="logo dc comics">
         </figure>
         <ul>
             <li v-for="link in links" :key="link.id">
-                <a :href="link.url" :class="{ active: link.current }">{{ link.text }}"</a>
+                <a :href="link.url" :class="{ active: link.current }">{{ link.text }}</a>
             </li>
         </ul>
     </div>
@@ -86,8 +86,8 @@ export default {
 }
 </script>
 
-<style scope>
-div {
+<style scoped>
+.header-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,14 +104,11 @@ ul {
 }
 
 ul li {
-    list-style-type: none;
     padding: 0 5px;
 }
 
 ul li a {
-    text-decoration: none;
-    color: #666;
-    font-weight: bold;
     font-size: 15px;
+    font-weight: bold;
 }
 </style>
